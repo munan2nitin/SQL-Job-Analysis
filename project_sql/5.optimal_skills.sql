@@ -43,4 +43,4 @@ skill_demand
 
 INNER JOIN skill_pay on skill_demand.skill_id = skill_pay.skill_id
 
-ORDER BY job_count DESC
+ORDER BY job_count DESC;
