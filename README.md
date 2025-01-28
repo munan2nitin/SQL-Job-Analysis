@@ -45,7 +45,7 @@ LIMIT 10;
 ### 2. Skills required for these top paying jobs
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
 
-```
+``` sql
 WITH top_paying_jobs AS
 (
 SELECT
@@ -80,11 +80,7 @@ Tableau is also highly sought after. Other skills like R, Snowflake, Pandas, and
 ### 3. In-Demand Skills for Data Analysts
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
 
-```
-/*
-What are the most in-demand skills for data analysts in India?
-Providing insights into most valuable skills for job seekers
-*/
+``` sql
 
 SELECT 
     skills,
@@ -105,13 +101,7 @@ SQL and Python remain fundamental, emphasizing the need for strong foundational 
 
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
 
-```
-/*
-What are the top paying skills?
-Average salary associated with each skill for Data Analyst in India
-Helps job seekers to identify most rewarding skills
-*/
-
+``` sql
 SELECT
 skills_dim.skills,
 ROUND(AVG(salary_year_avg),0) AS average_salary
@@ -141,7 +131,7 @@ LIMIT 25;
 
 Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
 
-```
+``` sql
 WITH skill_demand AS
 (
     SELECT 
