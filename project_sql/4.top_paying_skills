@@ -22,11 +22,3 @@ GROUP BY skills_dim.skills
 ORDER BY average_salary DESC
 
 LIMIT 25;
-
-/*
-Top-paying skills: PySpark, GitLab, PostgreSQL, Linux, and MySQL, with an average salary of $1,65,000.
-Neo4j and GDPR: Offer slightly lower salaries, averaging $1,63,782.
-Airflow, MongoDB, and Scala: Mid-range salaries, averaging $1,35,994 - $1,38,088.
-Popular data skills: Pandas, Kafka, and Spark average $1,22,000 - $1,18,000.
-Entry-level tools: Snowflake, Matplotlib, and Bash average $1,11,000.
-*/

@@ -22,7 +22,7 @@ skill_pay AS
 (
 SELECT
     skills_job_dim.skill_id,
-    ROUND(AVG(salary_year_avg),0) AS average_salary
+    ROUND(AVG(salary_year_avg),0) AS Average_Salary
 FROM job_postings_fact
 INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
@@ -36,7 +36,7 @@ SELECT
 skill_demand.skill_id,
 skill_demand.skills,
 job_count,
-average_salary
+Average_Salary
 
 FROM
 skill_demand
